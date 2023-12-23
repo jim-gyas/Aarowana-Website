@@ -1,0 +1,354 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common-css-template/common.css">
+    <link rel="stylesheet" href="../Services/survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Montserrat:wght@200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <!-------nav bar -->
+ <nav class="navbar">
+      
+    <div class="logo">
+  
+            <img class="img1" src="/images/3D LOGO 02.jpg" alt="">
+
+   
+     
+    </div>
+    <ul class="nav-links">
+
+
+    
+      <div  class="menu">
+
+        <li><a  href="/home.html">Home</a></li>
+        <li class="dropdown">
+            <div  class="drop-arrow">
+                <a  class="dropdown-btn">Company</a>
+                <img src="../images/dashicons_arrow-up.svg" alt="">
+            </div>
+          
+  
+        
+            <div class="dropdown-content">
+              
+                <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+           
+         
+              </div>
+  
+          </li>
+        <li class="dropdown">
+            <div class="drop-arrow">
+                <a class="dropdown-btn ">Services</a>
+                <img src="../images/dashicons_arrow-up.svg" alt="">
+            </div>
+
+      
+          <div class="dropdown-content">
+            
+            <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+            <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+            <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+            <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+            <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+            <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+            <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+          
+            </div>
+
+        </li>
+        <li class="dropdown">
+            <div class="drop-arrow">
+                <a  class="dropdown-btn ind ">Industries</a>
+                <img src="../images/dashicons_arrow-up.svg" alt="">
+            </div>
+      
+          <div class="dropdown-content">
+            
+            <a href="/Industries/telecom.html" class="dropdown-item">Telecom</a>
+            <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+            <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+            <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+       
+            <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+            <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+            <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+           
+       
+            </div>
+
+        </li>
+      
+
+        <li><a  href="/template/careers.html">Careers</a></li>
+       
+        <li class="dropdown">
+            <div class="drop-arrow res">
+                <a  class="dropdown-btn ">Resources</a>
+                <img src="../images/dashicons_arrow-up.svg" alt="">
+            </div>
+  
+        
+            <div class="dropdown-content">
+              
+              <a href="../Resources/blog.html" class="dropdown-item">Blog</a>
+              <a href="../Resources/download.html" class="dropdown-item">Downloads</a>
+              <a href="../Resources/events.html" class="dropdown-item">Events</a>
+              <a href="../Resources/videos.html" class="dropdown-item">Videos</a>
+         
+              </div>
+  
+          </li>
+  
+        <li><a href="/template/Contact.html">Contact</a></li>
+        
+        </li>
+      
+      </div>
+      <div onclick="showMenu()" class="hamburger">
+        <img  src="../images/hamburger (2).png" alt="">
+      </div>
+    </ul>
+    <div id="sidebar1" class="sidebar">
+      <ul class="side-link">
+        <li>
+            <a href="/home.html">Home</a>
+        </li>
+        <div class="dropdown1">
+            <li class="dropdown">
+                <div class="drop-arrow ">
+                    <a onclick="displayContent()" class="dropdown-btn ">company</a>
+                
+                </div>
+                <div class="dropdown-content">
+                    <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                    <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                    <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+                </div>
+            </li>
+        </div>
+       
+        <div class="dropdown2">
+            <li class="dropdown">
+                <div class="drop-arrow ">
+                    <a onclick="displayContent()"  class="dropdown-btn ">Services</a>
+             
+                </div>
+                <div class="dropdown-content">
+                    <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+            <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+            <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+            <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+            <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+            <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+            <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+                </div>
+            </li>
+        </div>
+       
+        <div class="dropdown3">
+            <li class="dropdown">
+                <div class="drop-arrow ">
+                    <a onclick="displayContent()" class="dropdown-btn ">Industries</a>
+      
+                </div>
+                <div class="dropdown-content">
+                    <a href="/Industries/telecom.html" class="dropdown-item">Telecom</a>
+                    <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+                    <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+                    <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+                    <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+                    <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+                    <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+                </div>
+            </li>
+        </div>
+   
+            <li><a  href="/template/careers.html">Careers</a></li>
+            
+            <div class="dropdown4">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()" class="dropdown-btn ">Resources</a>
+                        
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="../Resources/blog.html" class="dropdown-item">Blog</a>
+                        <a href="../Resources/download.html" class="dropdown-item">Downloads</a>
+                        <a href="../Resources/events.html" class="dropdown-item">Events</a>
+                        <a href="../Resources/videos.html" class="dropdown-item">Videos</a>
+                   
+                    </div>
+                </li>
+            </div>
+            <div>
+
+                <li><a  href="/template/Contact.html">Contact</a></li>
+            </div>
+
+
+
+      </ul>
+        <!-- Add more links as needed -->
+     </div>
+  
+
+    
+  </nav>
+
+      <!-----------------------------------structure-hero------------->
+
+      <section>
+        <div class="oil-hero">
+ 
+        </div>
+      </section>
+
+            <!------------------------------------lidar-section----------------------------------------->
+<section>
+    <div class="survey-flex">
+
+        <div class="survey-item1">DGPS Survey</div>
+       
+        <div class="survey-item2">
+            <p>
+                Visualization through maps plays a vital role in Urban Planning, Utility Maintenance , LandUse planning and Transportation. Kashyap GeoTech, provides the best DGPS survey, an accurate techniques to locate the global position of the features with enhanced accuracy.
+               </p>
+                <p>
+                    We collaborate with our clients to provide solutions for the following detailing services.
+
+                </p>
+                
+            </div>
+
+                <div class="survey-spacing">
+                    <ul>
+                        <li>
+                            To prepare planimetric topographical maps (Surveying/mapping).
+        
+        
+                        </li>
+                        <li>
+                            To determine the space position of ground objects.
+        
+        
+                        </li>
+                        <li>
+                            Creation of Digital Terrain Models (DTM).
+        
+                        </li>
+                        <li>
+                            For acquisition of military intelligence (Military/artificial intelligence).
+        
+                        </li>
+                        <li>
+                            To classify soil (Forestry/agriculture).
+        
+                        </li>
+                        <li>
+                            For the interpretation of geology (Geology/archaeology).           
+        
+                        </li>
+                      
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-------------------------------Infooo-->
+<section>
+
+    
+    <div class="Info-container ">
+   
+       <div id="info" class="Info-grid ">
+           <div class="Sub-info-grid">
+               <div class="Sub-services-header"><h1>Quick Links</h1></div>
+               <div class="Links">
+                <p> <a href="../template/Journey.html">About Us</a>  </p>  
+                <p>
+                    <a href="../template/Contact.html">Contact Us</a>  </p>  
+                <p>  <a href="../home.html">Home</a>  </p>  
+                <p>     <a href="../template/careers.html">Career</a>  </p>  
+               </div>
+           </div>
+           <div class="Sub-info-grid">
+               <div class="Sub-services-header"><h1>Contact Us</h1></div>
+               <div class="Contact1-para">
+                  <div class="Contact-para">
+                   <p><img src="../images/🦆 icon _phone_ (2).svg" alt=""> +91 879 053 5568</p>
+                  </div> 
+                   <div  class="Contact-para">
+                   <p><img src="../images/🦆 icon _mail_ (2).svg" alt="">   info@arowanasoft.com </p>
+   
+                   </div>   
+                   <div class="Contact-para-add">
+                       <p><img src="../images/carbon_location (2).svg" alt=""> 2nd Floor, eCentric Building,Hill No 3, IT HUB, <br>
+                                   MadhurawadaVisakhapatnam – 530041,AP.</p>
+   
+                   </div>      
+               </div>
+           </div>
+           <div class="Sub-info-grid">
+               <div class="Sub-services-header">
+                   <h1 class="header-footer">Why Arowana</h1></div>
+                   <div class="Why-para">
+   
+                       <p>We focus on innovation and improving business processes
+                           by aligning people, processes and systems. Our business 
+                           models are designed to suit your unique requirements.</p>
+                   </div>
+               <div class="Follow">
+                <div class="Sub-services-header"><h1>Follow Us on</h1></div>
+                <div class="Icon-flex">
+                    <div class="Social">
+                        <a href="https://www.linkedin.com/company/arowanasoft/">     <img src="../images/🦆 icon _linkedin in_ (1).svg" alt=""></a>
+                     
+                  </div>
+                  <div class="Social">
+                     <a href="https://www.facebook.com/arowanasoftware"> <img src="../images/🦆 icon _facebook f_ (1).svg" alt=""></a>
+  
+                  </div>
+  
+                  <div class="Social">
+                     <a href="https://twitter.com/arowana_soft"> <img src="../images/ri_twitter-line (1).png" alt=""></a>
+  
+                  </div>
+              
+  
+                  <div class="Social">
+                      <a href="https://www.instagram.com/Arowana_Software_Solutions/"><img src="../images/🦆 icon _instagram_ (1).svg" alt=""></a>
+  
+                  </div>
+                </div>
+               </div>
+              
+           </div>
+           <div></div>
+           <div></div>
+       </div>
+    </div>   
+         
+   
+     </section>  
+   
+     <!-------------------Footer----------->
+     <footer>
+       <div class="Footer  ">
+           <p >©Arowana – All rights reserved</p>
+       </div>
+     </footer>
+     <script src="/script.js"></script>
+   </body>
+   </html>

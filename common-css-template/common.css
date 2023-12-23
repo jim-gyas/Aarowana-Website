@@ -1,0 +1,667 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+font-weight: 400;
+line-height: 150%;
+scroll-behavior: smooth;
+overflow-x: hidden;
+background: #FFF;
+
+}
+.navbar li{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ol{
+    list-style: decimal;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #000;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.para-large{
+    text-align:justify;
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+color: rgba(4, 4, 4, 0.78);
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 74px;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 6px 60px 5px 24px;
+  background-color:#FFFF;
+  color: #000;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  top: 0px;
+   width: 100%;
+  z-index:1000;
+
+
+  
+}
+.menu{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 16px;
+
+}
+
+
+
+.menu a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+
+}
+.menu a:hover {
+  position: relative;
+  color: #FFB800;
+  text-decoration: none;
+
+}
+
+/* Create the underline animation */
+.menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: ;
+  background-color: #FFB800;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Trigger the animation on hover */
+.menu a:hover::before {
+  visibility: visible;
+  width: 100%;
+  color: #FFB800;
+}
+.drop-arrow a:hover::before {
+  visibility: hidden;
+  width: 100%;
+  color: #FFB800;
+}
+
+
+
+
+ .logo{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items:center ;
+ }
+
+.img1{
+  width: 180px;
+  height: 71px;
+  flex-shrink: 0;
+}
+
+/* NAVBAR MENU */
+
+
+
+.menu li {
+
+  height: 20px;
+  transition: transform 0.3s ease;  
+  padding: 5px 0;  
+}
+.menu li:hover {
+
+ text-underline-position: below;
+ transform: scale(1.05);
+
+
+}
+
+
+/* DROPDOWN MENU */
+/* Style for the container of the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+
+}
+
+/* Style for the trigger button */
+.dropdown-btn {
+  
+  color: #000;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.drop-arrow{
+  display: flex;
+  z-index: -11;    
+
+
+
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+.dropdown:hover .drop-arrow img{
+transform: rotate(180deg);
+transition-delay: 1s all ease in;
+
+}
+
+.drop-arrow img{
+margin-bottom: 17px;
+transition: transform 1s all ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#FFFF;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  margin-top: 0px;
+  padding-right: 20px;
+  
+  border-radius: 2px;
+}
+
+/* Style for the dropdown items */
+.dropdown-item {
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+  text-wrap: nowrap;
+  
+  background-color: transparent;
+
+}
+.dropdown-item:hover {
+
+ text-decoration: none;
+ 
+}
+.hamburger img{
+  display:none ;
+  width: 30px;
+  position: fixed;
+  top: 6px;
+  right: 34px;
+}
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed ;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  background-color: #FFF;
+  padding-top: 50px;
+}
+
+  /* Information    */
+
+  
+  .Info-container{
+    background: #343434;
+    box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.20);
+  color: #FFF;
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-top: 20px;
+    
+  }
+
+  
+  .Sub-info-grid{
+      display: grid;
+      grid-template-rows: auto auto;
+      
+  }
+  .Info-grid{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+      align-items: start;
+      color: #FFF;
+  }
+  .Links{
+      max-width: 168px;
+      font-size: 13px;
+      margin-top: 24px;
+      line-height: 36px;
+      margin-bottom: 64px;
+      color: #FFF;
+  }
+  .Links a{
+    color: #FFF;
+  }
+  .Links a:hover{
+    text-decoration: underline;
+    color:#CF9500;
+  }
+  .Contact-para{
+      font-size: 13px;
+      line-height: normal;
+      margin-bottom: 23px;
+      color: #FFF;
+   
+  }
+  .Contact-para img{
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+  }
+  .Contact-para-add{
+      font-size: 13px;
+      line-height: normal;
+      margin-bottom: 23px;
+  
+      text-align:left;
+   
+  }
+  
+  .Contact1-para{
+      margin-top: 22px;
+      margin-bottom: 38px;
+  }
+  
+  .Why-para {
+      max-width:386px;
+      font-size: 13px;
+      margin-top: 22px;
+   
+  }
+  #info h1{
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 16px;
+  }
+  .Social
+  {
+  
+      width: 40px;
+      height:40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition-delay: transform 2s;
+      
+  
+  
+  }
+
+.Social img{
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+ 
+
+
+  
+}
+.Social a{
+text-decoration: none;
+}
+.Social a>img{
+width: 25px;
+height: 25px;
+margin-left: 50px;
+}
+  .Icon-flex{
+      display:inline-flex ;
+      gap: 0px;
+      margin-top: 0px;
+      
+  }
+  .Icon-flex img{
+      width: 21px;
+      height: 21px;
+     
+  
+  }
+  .Contact-para img{
+    width: 15px;
+  
+  }
+  .Contact-para p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .Follow{
+      margin-top: 20px;
+      
+  }
+  .Icon-header{
+      font-size: 16px;
+      margin-top: 14px;
+  
+  }
+  .Footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      background: #000;
+  }
+  .Footer >p{
+      
+    color: #5A5A5A;
+  
+  
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 185.714% */
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.5s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /*----------------------Mobile Responsive-----------------*/
+  
+/*----------------Info and footer--------------------------------*/
+
+@media screen and (max-width: 600px){
+  body {
+    margin:0;
+    padding:0;
+
+
+    }
+      
+  .img1{
+    width: 110px;
+    height: 38px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 2px 6px 5px 6px;
+    background-color:#FFF;
+    color: #000;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+    position: fixed;
+    top: 0px;
+     width: 100vw;
+    z-index:1000;
+    overflow: hidden;
+
+
+    
+  }
+
+  li a{
+    z-index: 10;
+  }
+  .menu{
+  
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 12px;
+    margin-right: 32px;
+    padding-left: 5px;
+    padding-right: 50px;
+    margin-top: 263px;
+    background-color: #FFF;
+  
+  }
+
+
+  .hamburger img{
+    display:block ;
+    width: 30px;
+    position: absolute;
+    top: 8px;
+   right: 15px;
+  }
+ 
+.dropdown .ind:hover .res{
+  opacity: 0;
+}
+
+#Button1{
+  display: flex;
+width: 96px;
+height: 22px;
+padding: 10px;
+justify-content: center;
+position: relative;
+color: #000;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+align-items: center;
+overflow: hidden;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 6px;
+background: #FFB800;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed ;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+padding-left: 10px;
+  background-color: #FFF;
+  padding-top: 50px;
+}
+
+
+
+.dropdown1:hover {
+
+margin-bottom: 160px;
+}
+.dropdown2:hover {
+
+margin-bottom: 440px;
+}
+.dropdown3:hover {
+
+margin-bottom: 390px;
+}
+.dropdown4:hover {
+
+margin-bottom: 210px;
+}
+
+
+
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+margin-top: 15px;
+  font-size: 13px;
+  color: #000;
+  display: block;
+
+}
+.sidebar a:hover {
+  position: relative;
+  color: #FFB800;
+  text-decoration: none;
+
+}
+/* Create the underline animation */
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: ;
+  background-color: #FFB800;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Trigger the animation on hover */
+.sidebar a:hover::before {
+  visibility: visible;
+  top: 27px;
+  width: 100%;
+  color: #FFB800;
+}
+
+/*---------------------Info--------------*/
+  .Info-grid{
+    display: grid;
+    grid-template-columns:  auto;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+  }
+  .Sub-info-grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .Links{
+    max-width: 168px;
+    font-size: 12px;
+    margin-top: 24px;
+    line-height: 36px;
+    margin-bottom: 64px;
+    color: #FFF;
+    text-align: -webkit-center;
+  }
+  .Contact-para p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: -webkit-center;
+    justify-content: center;
+    color: #FFF;
+  }
+  .Contact-para-add{
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 23px;
+  
+    text-align:-webkit-center;
+  
+  }
+  .Why-para {
+    max-width:386px;
+    font-size: 13px;
+    margin-top: 22px;
+    font-size: 12px;
+    text-align: -webkit-center;
+  }
+  .Footer >p{
+      
+    color: #5A5A5A;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 185.714% */
+  }
+  .Follow{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+    font-size: 14px;
+  }
+  .Icon-flex img{
+    width: 15px;
+    height: 15px;
+   
+  
+  }
+  .Social
+  {
+  
+      width: 80px;
+      height:40px;
+      margin-top: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition-delay: transform 2s;
+  
+  
+  }
+  #info h1{
+    width: 350px;
+    text-align: -webkit-center;
+  }
+}

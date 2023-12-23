@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <link rel="stylesheet" href="../common-css-template/common.css">
+    <link rel="stylesheet" href="/template/journey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Montserrat:wght@200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-------nav bar -->
+    <nav class="navbar">
+      
+        <div class="logo">
+      
+                <img class="img1" src="/images/3D LOGO 02.jpg" alt="">
+    
+       
+         
+        </div>
+        <ul class="nav-links">
+
+
+        
+          <div  class="menu">
+    
+            <li><a  href="/home.html">Home</a></li>
+            <li class="dropdown">
+                <div  class="drop-arrow">
+                    <a  class="dropdown-btn">Company</a>
+                    <img src="../images/dashicons_arrow-up.svg" alt="">
+                </div>
+              
+      
+            
+                <div class="dropdown-content">
+                  
+                    <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                    <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                    <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+               
+             
+                  </div>
+      
+              </li>
+            <li class="dropdown">
+                <div class="drop-arrow">
+                    <a class="dropdown-btn ">Services</a>
+                    <img src="../images/dashicons_arrow-up.svg" alt="">
+                </div>
+    
+          
+              <div class="dropdown-content">
+                
+                <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+                <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+                <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+                <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+                <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+                <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+                <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+              
+                </div>
+    
+            </li>
+            <li class="dropdown">
+                <div class="drop-arrow">
+                    <a  class="dropdown-btn ind ">Industries</a>
+                    <img src="../images/dashicons_arrow-up.svg" alt="">
+                </div>
+          
+              <div class="dropdown-content">
+                
+                <a href="/Industries/telecom.html" class="dropdown-item">Telecom</a>
+                <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+                <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+                <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+           
+                <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+                <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+                <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+               
+           
+                </div>
+    
+            </li>
+          
+    
+            <li><a  href="/template/careers.html">Careers</a></li>
+           
+            <li class="dropdown">
+                <div class="drop-arrow res">
+                    <a  class="dropdown-btn ">Resources</a>
+                    <img src="../images/dashicons_arrow-up.svg" alt="">
+                </div>
+      
+            
+                <div class="dropdown-content">
+                  
+                  <a href="../Resources/blog.html" class="dropdown-item">Blog</a>
+                  <a href="../Resources/download.html" class="dropdown-item">Downloads</a>
+                  <a href="../Resources/events.html" class="dropdown-item">Events</a>
+                  <a href="../Resources/videos.html" class="dropdown-item">Videos</a>
+             
+                  </div>
+      
+              </li>
+      
+            <li><a href="/template/Contact.html">Contact</a></li>
+            
+            </li>
+          
+          </div>
+          <div onclick="showMenu()" class="hamburger">
+            <img  src="../images/hamburger (2).png" alt="">
+          </div>
+        </ul>
+        <div id="sidebar1" class="sidebar">
+          <ul class="side-link">
+            <li>
+                <a href="/home.html">Home</a>
+            </li>
+            <div class="dropdown1">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()"  class="dropdown-btn ">company</a>
+                    
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                        <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                        <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+                    </div>
+                </li>
+            </div>
+           
+            <div class="dropdown2">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()"  class="dropdown-btn ">Services</a>
+                 
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+                <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+                <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+                <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+                <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+                <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+                <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+                    </div>
+                </li>
+            </div>
+           
+            <div class="dropdown3">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()" class="dropdown-btn ">Industries</a>
+          
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/Industries/telecom.html" class="dropdown-item">Telecom</a>
+                        <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+                        <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+                        <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+                        <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+                        <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+                        <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+                    </div>
+                </li>
+            </div>
+       
+                <li><a  href="/template/careers.html">Careers</a></li>
+                
+                <div class="dropdown4">
+                    <li class="dropdown">
+                        <div class="drop-arrow ">
+                            <a onclick="displayContent()" class="dropdown-btn ">Resources</a>
+                            
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="../Resources/blog.html" class="dropdown-item">Blog</a>
+                            <a href="../Resources/download.html" class="dropdown-item">Downloads</a>
+                            <a href="../Resources/events.html" class="dropdown-item">Events</a>
+                            <a href="../Resources/videos.html" class="dropdown-item">Videos</a>
+                       
+                        </div>
+                    </li>
+                </div>
+                <div>
+
+                    <li><a  href="/template/Contact.html">Contact</a></li>
+                </div>
+
+
+   
+          </ul>
+            <!-- Add more links as needed -->
+         </div>
+      
+
+        
+      </nav>
+    <!--------hero section-->
+        
+    <section>
+        <div class="journey-hero">
+            <div class="journey-hero-text">Our Journey</div>
+        </div>
+      </section>
+
+
+
+
+    <!----------------------Content-->
+   <section>
+    <div class="journey-content">
+        <div class="journey-content-head ">We help in business innovation and growth</div>
+        <div class="journey-grid">
+            <div class="journey-grid-left">
+                <div class="journey-left1">Arowana is serving the industries Like Manufacturing, Healthcare, Entertainment, Banking and Financial etc. As we are growing gradually in the market with our great team support.We believe "unity is strength", That is the foundation for our company to serve in Engineering and Software streams.
+
+                </div>
+                <div class="journey-left2">Arowana is one of the most experienced services located in Metropolitan city, India. We have a long tradition of consistent performance and enduring client relationships built along with quality services. Arowana Software Solutions has the experience, technical resources and worldwide capacity to enable excellent performance on any geo spatial projects including of CAD, GIS, Remote Sensing, Digital Photogrammetry, LiDAR, BIM, Surveys (Total Station/ DGPS Survey, etc.)
+
+                </div>
+                <div
+                class="journey-left3 "><img src="../images/Rectangle 42 (1).png" alt=""></div>
+            </div>
+            <div class="journey-grid-right">
+                <div class="journey-right1 "> <img src="../images/Rectangle 41 (1).png" alt=""></div>
+                <div class="journey-right2 reveal">
+                    Our strength lies in its core of competent, Corporate Experienced, Highly qualified, trained, experienced surveyors, geoscientists, skilled computer and software professionals known to provide cutting edge technology based services.
+
+                </div>
+                <div class="journey-right3 reveal">
+                    Arowana has refined the business and project development model to a reliable science that can still be tweaked per specific client needs. Our hands-on collaborative and iterative approach has resulted in more than 80 percent client satisfaction to date. We're eager to hear from you to learn what new and exciting projects we can help you implement to make your business soar.
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+<!----------------------------Small Content-->
+<section>
+    <div class="journey-content-flex reveal ">
+        <div class="journey1 ">
+            <div class="journey1-1"><img src="../images/material-symbols-light_diamond-outline (1).svg" alt=""></div>
+            <div class="journey1-2 counter">5</div>
+            <div class="journey1-3">Years Experience</div>
+        </div>            
+        <div class="journey2 ">
+            <div class="journey2-1"><img src="../images/group_9550146.png" alt=""></div>
+            <div class="journey2-2 counter">300</div>
+            <div class="journey2-3">Team Members</div>
+        </div>            
+        <div class="journey3 ">
+            <div class="journey3-1"><img src="../images/angel.png" alt=""></div>
+            <div class="journey3-2 counter">500</div>
+            <div class="journey3-3">Happy Clients</div>
+        </div>            
+        <div class="journey4 ">
+            <div class="journey4-1"><img src="../images/management.png" alt=""></div>
+            <div class="journey4-2 counter">1000</div>
+            <div class="journey4-3">Projects Done</div>
+        </div>            
+
+    </div>
+</section>
+<!---------------------last Content---------------->
+
+<section>
+    <div class="last-content reveal">
+        <div class="last-head ">We aims at developing innovative, cost effective and secure end 
+            to end technology solutions providing the
+             best performance</div>
+             <div class="last-grid ">
+                <div class="last-grid-left ">
+                    <div class="last-1">Arowana is one of the most experienced services located in Metropolitan city, India. We have a long tradition of consistent performance and enduring client relationships built along with quality services. Arowana Software Solutions has the experience, technical resources and worldwide capacity to enable excellent performance on any geo spatial projects including of BIM, Cyclone Modeling, 3D Laser Scanning and Modeling, CAD, GIS, Remote Sensing, Digital Photogrammetry, LiDAR, Surveys (Total Station/ DGPS Survey, etc.)
+
+                    </div>
+                    <div class="last-2">Arowana will always strive to provide the best consulting services to the customers for the rapid growth of small to large companies.
+
+                    </div>
+                    <div class="last-3">We ensure you that we deliver a quality software and services with better architecture, design, implementation and testing of quality assurance and we also include reliability and security provided to your applications</div>
+                </div>
+                <div class="last-grid-right ">
+                    <img src="../images/Rectangle 41 (2).png" alt="">
+                </div>
+             </div>
+    </div>
+</section>
+
+<!------------------info--------------------->
+        <div class="Info-container ">
+           
+            <div id="info" class="Info-grid ">
+                <div class="Sub-info-grid">
+                    <div class="Sub-services-header"><h1>Quick Links</h1></div>
+                    <div class="Links">
+                     <p> <a href="../template/Journey.html">About Us</a>  </p>  
+                     <p>
+                         <a href="../template/Contact.html">Contact Us</a>  </p>  
+                     <p>  <a href="../home.html">Home</a>  </p>  
+                     <p>     <a href="/template/careers.html">Career</a>  </p>  
+                    </div>
+                </div>
+                <div class="Sub-info-grid">
+                    <div class="Sub-services-header"><h1>Contact Us</h1></div>
+                    <div class="Contact1-para">
+                       <div class="Contact-para">
+                        <p><img src="../images/🦆 icon _phone_ (2).svg" alt=""> +91 879 053 5568</p>
+                       </div> 
+                        <div  class="Contact-para">
+                        <p><img src="../images/🦆 icon _mail_ (2).svg" alt="">   info@arowanasoft.com </p>
+        
+                        </div>   
+                        <div class="Contact-para-add">
+                            <p><img src="../images/carbon_location (2).svg" alt=""> 2nd Floor, eCentric Building,Hill No 3, IT HUB, <br>
+                                        MadhurawadaVisakhapatnam – 530041,AP.</p>
+        
+                        </div>      
+                    </div>
+                </div>
+                <div class="Sub-info-grid">
+                    <div class="Sub-services-header">
+                        <h1 class="header-footer">Why Arowana</h1></div>
+                        <div class="Why-para">
+        
+                            <p>We focus on innovation and improving business processes
+                                by aligning people, processes and systems. Our business 
+                                models are designed to suit your unique requirements.</p>
+                        </div>
+                    <div class="Follow">
+                     <div class="Sub-services-header"><h1>Follow Us on</h1></div>
+                     <div class="Icon-flex">
+                         <div class="Social">
+                             <a href="https://www.linkedin.com/company/arowanasoft/">     <img src="../images/🦆 icon _linkedin in_ (1).svg" alt=""></a>
+                          
+                       </div>
+                       <div class="Social">
+                          <a href="https://www.facebook.com/arowanasoftware"> <img src="../images/🦆 icon _facebook f_ (1).svg" alt=""></a>
+       
+                       </div>
+       
+                       <div class="Social">
+                          <a href="https://twitter.com/arowana_soft"> <img src="../images/ri_twitter-line (1).png" alt=""></a>
+       
+                       </div>
+                   
+       
+                       <div class="Social">
+                           <a href="https://www.instagram.com/Arowana_Software_Solutions/"><img src="../images/🦆 icon _instagram_ (1).svg" alt=""></a>
+       
+                       </div>
+                     </div>
+                    </div>
+                   
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+         </div>   
+              
+        
+          </section>  
+        
+          <!-------------------Footer----------->
+          <footer>
+            <div class="Footer  ">
+                <p  >©Arowana – All rights reserved</p>
+            </div>
+          </footer>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+          <script src="/script.js"></script>
+          <script src="jquery.counterup.min.js"></script>
+          <script>
+            $(document).ready(function($){
+                $('.counter').counterUp({
+            delay: 10,
+           time: 1000
+               }); 
+            })
+          </script>
+          
+     </body>
+      </html>

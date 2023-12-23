@@ -1,0 +1,134 @@
+.laser-hero{
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 70.67%), url(../Services/services-images/Rectangle\ 4\ \(50\).png), lightgray 0px -150.056px / 100% 218.296% no-repeat;
+  margin-top: 70px;
+  object-fit:cover ;
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+    height: 500px; 
+    color: #fff; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    
+ }
+
+
+ /*-------------------------------------------------content----*/
+
+ .laser-flex{
+    padding: 36px 45px 40px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ .laser-flex-1{
+    color: #313540;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 60px */
+margin-bottom: 32px;
+ }
+
+ .laser-flex-2{
+    color: #000;
+text-align: left;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+margin-bottom: 20px;
+ }
+.laser-flex-2 p{
+    margin-bottom: 10px;
+}
+
+.laser-flex-3{
+    color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+}
+
+.laser-spacing{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+/*------Mobile------------*/
+@media screen and (max-width:600px){
+    .laser-hero{
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 70.67%), url(../Services/services-images/Rectangle\ 4\ \(50\).png), lightgray 0px -150.056px / 100% 218.296% no-repeat;
+      margin-top: 0px;
+      object-fit:cover ;
+        background-size: cover;
+        width: 100vw;
+        background-position: center;
+        height: 350px; 
+        color: #fff; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        
+     }
+      /*-------------------------------------------------content----*/
+
+ .laser-flex{
+    padding: 36px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ .laser-flex-1{
+    color: #313540;
+    width: 360px;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 60px */
+margin-bottom: 32px;
+margin-left: 110px;
+ }
+
+ .laser-flex-2{
+    color: #000;
+text-align: left;
+
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+margin-bottom: 20px;
+ }
+ h1{
+    font-size: 18px;
+ }
+.laser-flex-2 p{
+    margin-bottom: 10px;
+}
+
+.laser-flex-3{
+    color: #000;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+}
+
+    
+}

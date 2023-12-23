@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAROWANA</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Montserrat:wght@200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Ubuntu&display=swap" rel="stylesheet">
+
+   
+</head>
+<body id="bang" class="background-img">
+   
+    <!-------nav bar -->
+    <nav class="navbar">
+      
+        <div class="logo">
+      
+                <img class="img1" src="/images/3D LOGO 02.jpg" alt="">
+    
+       
+         
+        </div>
+        <ul class="nav-links">
+
+
+        
+          <div  class="menu">
+    
+            <li><a  href="/home.html">Home</a></li>
+            <li class="dropdown">
+                <div  class="drop-arrow">
+                    <a class="dropdown-btn">Company</a>
+                    <img src="./images/dashicons_arrow-up.svg" alt="">
+                </div>
+              
+      
+            
+                <div class="dropdown-content">
+                  
+                    <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                    <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                    <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+               
+             
+                  </div>
+      
+              </li>
+            <li class="dropdown">
+                <div class="drop-arrow">
+                    <a class="dropdown-btn ">Services</a>
+                    <img src="./images/dashicons_arrow-up.svg" alt="">
+                </div>
+    
+          
+              <div class="dropdown-content">
+                
+                <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+                <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+                <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+                <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+                <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+                <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+                <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+              
+                </div>
+    
+            </li>
+            <li class="dropdown">
+                <div class="drop-arrow">
+                    <a  class="dropdown-btn ind ">Industries</a>
+                    <img src="./images/dashicons_arrow-up.svg" alt="">
+                </div>
+          
+              <div class="dropdown-content">
+                
+                <a href="./Industries/telecom.html" class="dropdown-item">Telecom</a>
+                <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+                <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+                <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+           
+                <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+                <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+                <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+               
+           
+                </div>
+    
+            </li>
+          
+    
+            <li><a  href="/template/careers.html">Careers</a></li>
+           
+            <li class="dropdown">
+                <div class="drop-arrow res">
+                    <a  class="dropdown-btn ">Resources</a>
+                    <img src="./images/dashicons_arrow-up.svg" alt="">
+                </div>
+      
+            
+                <div class="dropdown-content">
+                  
+                  <a href="./Resources/blog.html" class="dropdown-item">Blog</a>
+                  <a href="./Resources/download.html" class="dropdown-item">Downloads</a>
+                  <a href="./Resources/events.html" class="dropdown-item">Events</a>
+                  <a href="./Resources/videos.html" class="dropdown-item">Videos</a>
+             
+                  </div>
+      
+              </li>
+      
+            <li><a href="/template/Contact.html">Contact</a></li>
+            
+            </li>
+          
+          </div>
+          <div onclick="showMenu()" class="hamburger">
+            <img  src="images/hamburger (2).png" alt="">
+          </div>
+        </ul>
+        <div id="sidebar1" class="sidebar">
+          <ul class="side-link">
+
+            <div>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+            </div>
+            <div class="dropdown1">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a   onclick="displayContent()" class="dropdown-btn ">company</a>
+                    
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="../template/Journey.html" class="dropdown-item">Our Journey</a>
+                        <a href="../Company/certifications.html" class="dropdown-item">Certifications</a>
+                        <a href="../Company/accreditations.html" class="dropdown-item">Accreditions</a>
+                    </div>
+                </li>
+            </div>
+           
+            <div class="dropdown2">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()"  class="dropdown-btn ">Services</a>
+                 
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/Services/gis.html" class="dropdown-item">GIS</a>
+                <a href="/Services/bim.html" class="dropdown-item">BIM</a>
+                <a href="/Services/lider.html" class="dropdown-item">LiDER</a>
+                <a href="/Services/3dlaserscanning.html" class="dropdown-item">3D Laser Scanning</a>
+                <a href="/Services/cad.html"class="dropdown-item" >CAD</a>
+                <a href="/Services/surveying.html" class="dropdown-item">Surveying</a>
+                <a href="/Services/structuralsteeldetailing.html" class="dropdown-item">Structural Steel Detailing</a>
+                    </div>
+                </li>
+            </div>
+           
+            <div class="dropdown3">
+                <li class="dropdown">
+                    <div class="drop-arrow ">
+                        <a onclick="displayContent()"  class="dropdown-btn ">Industries</a>
+          
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="./Industries/telecom.html" class="dropdown-item">Telecom</a>
+                        <a href="/Industries/oilandgas.html" class="dropdown-item">Oil & Gas</a>
+                        <a href="/Industries/infrastructure.html" class="dropdown-item">Infrastructure</a>
+                        <a href="/Industries/agriculture.html" class="dropdown-item">Agriculture</a>
+                        <a href="/Industries/engineering.html" class="dropdown-item">Engineering</a>
+                        <a href="/Industries/manufacturing.html" class="dropdown-item">Manufacturing</a>
+                        <a href="/Industries/mining.html" class="dropdown-item">Minning</a>
+                    </div>
+                </li>
+            </div>
+       
+             <div>
+                <li><a  href="/template/careers.html">Careers</a></li>
+            </div>
+                
+                <div class="dropdown4">
+                    <li class="dropdown">
+                        <div class="drop-arrow ">
+                            <a onclick="displayContent()" class="dropdown-btn ">Resources</a>
+                            
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="./Resources/blog.html" class="dropdown-item">Blog</a>
+                            <a href="./Resources/download.html" class="dropdown-item">Downloads</a>
+                            <a href="./Resources/events.html" class="dropdown-item">Events</a>
+                            <a href="./Resources/videos.html" class="dropdown-item">Videos</a>
+                       
+                        </div>
+                    </li>
+                </div>
+                <div>
+
+                    <li><a  href="/template/Contact.html">Contact</a></li>
+                </div>
+
+
+   
+          </ul>
+            <!-- Add more links as needed -->
+         </div>
+      
+
+        
+      </nav>
+      
+    <!--------hero section-->
+
+        
+    <div id="slider-container" class="">
+        <div class="container">
+   <div class="slide">
+    <div class="hero-flex">
+        <div class="hero-1">
+      <img src="images/Rectangle 5 (8)-min.png" alt="">
+        </div>
+
+      
+    </div>
+    <div class="element">
+        <p class="header-element">Structural Steel Detailing</p>
+        <p class="para-element">Arowana is a professional managed engineering solutions provider with expertise in Design & detailed engineering. We provide
+            fully detailed and accurate drawings with the assistance 
+            of the world’s most advanced powerful 
+            and flexible detailing
+            softwares and 
+            tools.
+    
+        </p>
+        <button id="Button1" type="button"><a href="">Read More</a></button>
+    </div>
+</div>
+ 
+   </div>
+
+       
+
+
+      </div>
+        
+ 
+
+    <!----------section1-------------------->
+<section >
+  <div class="section1-container " >
+    <div class="header-center heading2 ">
+       <h1>Our Company</h1>
+       <div class="para ">
+        We aims at developing innovative, cost effective and secure end to end technology solutions providing
+        the best performance
+
+       </div>
+    </div>
+    <div class="container1  ">
+        <div class="left1-container">
+            <div class="left1-grid ">
+        <div class="logo1"><img src="/images/nimbus_marketing.svg" alt=""></div>
+       <div> 
+        <p class="para1">Arowana provides you with digital marketing to fulfill your needs and we process everything in a defined manner so that to make
+        a result in better customer acquisition 
+        and transformation.</p>
+        </div>
+        </div>
+            <div class="left1-grid ">
+        <div class="logo1"><img src="/images/fluent-mdl2_c-r-m-services (1).svg" alt=""></div>
+       <div> 
+        <p class="para1">Arowana will always strive to provide the best consulting services 
+            to the customers for the rapid growth of small to large
+             companies.</p>
+        </div>
+        </div>
+            <div class="left1-grid ">
+        <div  class="logo1"><img src="/images/eos-icons_software-outlined (1).svg" alt=""></div>
+       <div> 
+        <p class="para1">We ensure you that we deliver a quality software and services with
+            better architecture, design, implementation and testing of 
+            quality assurance and we also include reliability and 
+            security provided to your applications.</p>
+        </div>
+        </div>
+          
+        </div>
+        <div class="right1">
+
+            <div class="right1-container">
+             
+          
+                <a href="https://youtu.be/SPCewaAfqPA?si=V18kvYUDkyqaFVLP">
+                    
+                    <button class="play">
+                        <i class="fa fa-play"></i>
+                    </button>
+                </a>
+                     
+         
+                    <img class="image1" src="/images/Rectangle 6 (3).png" />
+                         
+                          <img class="image4" src="images/Rectangle 8 (13).png" />
+                          <img class="image3" src="images/Rectangle 10 (2).png" />
+
+           
+                
+                      <div class="new-color">
+                        <img class="image2" src="images/Rectangle 7 (1).png" />
+                         
+                      <img class="image5" src="images/Rectangle 9 (2).png " />
+                      </div>
+      
+              
+        </div>
+          </div>
+        </div>
+
+        
+    </div>
+  </div>
+
+
+</section>
+
+
+    <!----Choose-us-->
+
+
+        
+        <section class="Choose-container " id ="box1">
+     
+           
+
+                    <div class=" Choose-header heading1 reveal-bottom reveal-bottom1"><h1>Why Choose Us</h1></div>
+                    <div class="Choose-grid ">
+                       <div class="Choose reveal-left reveal-left1">
+                  
+                        <div class="Choose1"><img src="images/material-symbols-light_diamond-outline (5).svg" alt=""></div>
+                        <div class="Choose2"> <h1>EXPERIENCE</h1></div>
+                        <div class="Choose3"><p>Our team has gained a wealth of knowledge and skills
+                            through the process of digitally transforming over 600 
+                            offshore platforms and more than 75 onshore industrial
+                            facilities.</p></div>
+                       </div>
+                       <div   class="Choose reveal-bottom reveal-bottom1">
+                        <div class="decorative-element"></div>
+                        <div class="Choose1"><img src="images/carbon_copy (1).svg" alt=""></div>
+                        <div class="Choose2"> <h1>COMPLETE DIGITAL TWINNING</h1></div>
+                        <div class="Choose3"><p>Our team is proficient in assisting with digital
+                            transformation efforts through in-house data
+                             acquisition, 3D modeling, data mining, and asset
+                            tagging</p></div>
+                       </div>
+                       <div    class="Choose reveal-right reveal-right1 ">
+        
+                        <div class="Choose1"><img src="images/bytesize_location (1).svg" alt=""></div>
+                        <div class="Choose2"> <h1>LOCAL PRESENCE</h1></div>
+                        <div class="Choose3"><p>We are a global company with a presence in many 
+                            regions, which allows us to offer shorter turn around
+                             times and maximum savings to our
+                             clients.</p></div>
+                       </div>
+                       <div    class=" Choose reveal-left reveal-left1">
+        
+                        <div class="Choose1"><img src="images/carbon_ibm-cloud-key-protect (1).svg" alt=""></div>
+                        <div class="Choose2"> <h1>RISK-FREE OF CONCEPT</h1></div>
+                        <div class="Choose3"><p>Arowana risk assessment simulation for offshore 
+                            projects offers comprehensive predictive 
+                            risk analysis related to HSE and 
+                            asset integrity..</p></div>
+                       </div>
+                       <div  class=" Choose reveal-bottom reveal-bottom1">
+        
+                        <div class="Choose1"><img src="images/carbon_analytics (1).svg" alt=""></div>
+                        <div class="Choose2"> <h1>PREDICTIVE ANALYTICS</h1></div>
+                        <div class="Choose3"><p>Arowana field experience of 20 years, enable to offer 
+                            accurate results and offers comprehensive predictive 
+                            risk analysis related to HSE and asset integrity
+                             in risk assessment for offshore projects.</p></div>
+                       </div>
+                       <div  class=" Choose reveal-right reveal-right1">
+        
+                        <div class="Choose1"><img src="images/covid_vaccine-protection-people-shield (1).svg" alt=""></div>
+                        <div class="Choose2"> <h1>INFORMATION SECURITY</h1></div>
+                        <div class="Choose3"><p>Our emphasis on the security implications of a digital 
+                            twin encourages us to 
+                            offer the best-in-industry approach
+                             to security.</p></div>
+                       </div>
+                       
+                    </div>
+                </div>
+          
+
+
+</section>
+
+
+<!----------------------hero1-section-->
+
+        <div id="slider-container" class="">
+            <div class="container">
+       <div class="slide">
+        <div class="hero-flex">
+            <div class="hero-1">
+          <img src="images/Rectangle 5 (9)-min.png" alt="">
+            </div>
+    
+          
+        </div>
+        <div class="element">
+            <p class="header-element">Structural Steel Detailing</p>
+            <p class="para-element">Arowana is a professional managed engineering solutions provider with expertise in Design & detailed engineering. We provide
+                fully detailed and accurate drawings with the assistance 
+                of the world’s most advanced powerful 
+                and flexible detailing
+                softwares and 
+                tools.
+        
+            </p>
+            <button id="Button1" type="button"><a href="">Read More</a></button>
+        </div>
+    </div>
+     
+       </div>
+
+           
+
+ 
+          </div>
+
+        <!----------------------Our Service ---------->
+    
+
+        <section>
+            <div class="Services-container  " id="box1">
+               
+                    <div class="Choose-header reveal-bottom reveal-bottom1"> <h1>Our Services</h1></div>
+
+                    <div class="Services-grid ">
+                      
+                        <div  class=" Sub-services-grid reveal-left reveal-left1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/Rectangle 66.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>3D Laser Scanning</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>3D Laser Scanning is a non-contact, non-destructive technology that digitally captures the shapes of physical objects and it will create “Point Clouds” of data from the surface of an object. 
+                                    The captured data will highly be 
+                                    efficient & accurate.</p></div>
+                            </div>
+                            <button  class="readme"><a href="Services/3dlaserscanning.html">Read More</a></button>
+                        </div>
+                        <div  class=" Sub-services-grid reveal-bottom reveal-bottom1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/Rectangle 8 (11).png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>Structural Steel Detailing </h1>
+                                </div>
+                                <div class="Sub-services-para"><p>We provide fully detailed and accurate drawings with the assistance of the world’s most advanced powerful and flexible detailing softwares and tools.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/structuralsteeldetailing.html">Read More</a></button>
+
+                                
+                        </div>
+            
+                        <div class="Sub-services-grid reveal-right reveal-right1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/images 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>2D Point Cloud </h1>
+                                </div>
+                                <div class="Sub-services-para"><p>Land surveying is the detailed study or inspection, as by gathering information through observations, measurements in the field, questionnaires, or research of legal instruments, and data analysis in the support of planning, designing, and establishing of property boundaries.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/pointcloud.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-left reveal-left1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/Matt-Brown-Cyclone-MODEL 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>Cyclone Modeling</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>Cyclone Model is the leading standalone software for analyzing laser scan data and turning it into useful deliverables
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/cyclone.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-bottom reveal-bottom1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/as-built-modeling 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>As - Built Modeling</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>BIM is a "digital representation" of a building's physical and functional properties and characteristics. BIM goes further than just the building's physical appearance, and includes information about every component that goes into a project.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/biuildingmodelling.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-right reveal-right1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/download 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>GIS For Utility Mappingg</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>GIS surveying go hand-in-hand. When drone technology, such as UAVs (unmanned aerial vehicles) are used with GIS platforms, it makes it easier for drones to report what they have seen in an easily simulated, easy to read way.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="./Services/gis.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-left reveal-left1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/Visualization-of-LIDAR-data-KayaLa-Cour-and-Alex-Davies-Wired-Videos-Watch-all-About 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>LIDAR Data Analysis And Visualization</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>Lidar, which stands for Light Detection and Ranging, is a remote sensing method that uses light in the form of a pulsed laser to measure ranges (variable distances) to the Earth
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/lider.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-bottom reveal-bottom1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/201909-lidar-plane-illustration-300x199 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>Photogrammetry</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>It provides professional mapping services with on-time delivery schedules and in a cost effective process.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Services/photogrammetry.html">Read More</a></button>
+
+                        </div>
+                        <div class="Sub-services-grid reveal-right reveal-right1">
+                            <div class="services-img-wrappper">
+                                <img src="/images/shutterstock_1606674793 1.png" alt="">
+                            </div>
+                            <div class="Services-flex">
+                                <div class="Sub-services-header">
+                                    <h1>Telecom Domain Services</h1>
+                                </div>
+                                <div class="Sub-services-para"><p>We utilizes the latest technological tools available to ensure the efficient collection and transfer of field data to our in-house design and engineering teams.
+    
+                                </p></div>
+                            </div>
+                            <button class="readme"><a href="Industries/telecom.html">Read More</a></button>
+
+                        </div>
+               
+                     
+                      
+    
+                    </div>
+                
+               
+            </div>
+        </section>
+    <!--------------------Our Projects--------------------------->
+    <section>
+        <div class="Project-container  ">
+    
+            <div class="Choose-header reveal Project-header "> Our Projects </div>
+            <div class="mini-slider reveal">
+                <div class="mini-slider-container">
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                    <img src="images/Rectangle 12.png" alt="Image 1">
+              
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+                  <div class="mini-card">
+                   
+                    <img src="images/Rectangle 13.png" alt="Image 3">
+                  </div>
+               
+              
+              
+                </div>
+          
+              </div>
+             
+              <div class="mini-slider-control ">
+                <button onclick="prevCard()"><img src="images/icon-park-outline_right-c (1).svg" alt=""></button>
+                <button onclick="nextCard()"><img src="images/icon-park-outline_right-c.svg" alt=""></button>
+              </div>
+   
+         
+                 </div>
+                
+                 </div>
+                        
+        </div>
+            
+      
+      </section>
+    
+  <!-------------------------information-------------------------->
+  <section>
+
+    
+ <div class="Info-container ">
+
+    <div id="info" class="Info-grid ">
+        <div class="Sub-info-grid">
+            <div class="Sub-services-header"><h1>Quick Links</h1></div>
+            <div class="Links">
+            <p> <a href="./template/Journey.html">About Us</a>  </p>  
+            <p>
+                <a href="/template/Contact.html">Contact Us</a>  </p>  
+            <p>  <a href="/home.html">Home</a>  </p>  
+            <p>     <a href="/template/careers.html">Career</a>  </p>  
+           
+            
+         
+               
+            </div>
+        </div>
+        <div class="Sub-info-grid">
+            <div class="Sub-services-header"><h1>Contact Us</h1></div>
+            <div class="Contact1-para">
+               <div class="Contact-para">
+                <p><img src="images/🦆 icon _phone_ (2).svg" alt=""> +91 879 053 5568</p>
+               </div> 
+                <div  class="Contact-para">
+                <p><img src="images/🦆 icon _mail_ (2).svg" alt="">   info@arowanasoft.com </p>
+
+                </div>   
+                <div class="Contact-para-add">
+                    <p><img src="images/carbon_location (2).svg" alt=""> 2nd Floor, eCentric Building,Hill No 3, IT HUB, <br>
+                                MadhurawadaVisakhapatnam – 530041,AP.</p>
+
+                </div>      
+            </div>
+        </div>
+        <div class="Sub-info-grid">
+            <div class="Sub-services-header ">
+                <h1 >Why Arowana</h1></div>
+                <div class="Why-para">
+
+                    <p>We focus on innovation and improving business processes
+                        by aligning people, processes and systems. Our business 
+                        models are designed to suit your unique requirements.</p>
+                </div>
+            <div class="Follow">
+             <div class="Sub-services-header"><h1>Follow Us on</h1></div>
+             <div class="Icon-flex">
+                <div class="Social">
+                      <a href="https://www.linkedin.com/company/arowanasoft/">     <img src="images/🦆 icon _linkedin in_ (1).svg" alt=""></a>
+                   
+                </div>
+                <div class="Social">
+                   <a href="https://www.facebook.com/arowanasoftware"> <img src="images/🦆 icon _facebook f_ (1).svg" alt=""></a>
+
+                </div>
+
+                <div class="Social">
+                   <a href="https://twitter.com/arowana_soft"> <img src="images/ri_twitter-line (1).png" alt=""></a>
+
+                </div>
+            
+
+                <div class="Social">
+                    <a href="https://www.instagram.com/Arowana_Software_Solutions/"><img src="images/🦆 icon _instagram_ (1).svg" alt=""></a>
+
+                </div>
+             </div>
+            </div>
+           
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+ </div>   
+      
+
+  </section>  
+
+  <!-------------------Footer----------->
+  <footer>
+    <div class="Footer  ">
+        <p >©Arowana – All rights reserved</p>
+    </div>
+  </footer>
+  <script src="/main.js"></script>
+  <script src="/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/main1.js"></script>
+   <script>
+      // Get the viewport width
+
+
+function removeClassesBasedOnScreenSize() {
+               // Get the viewport width
+              
+                  // Select elements with the class "Choose"
+                  var chooseElements = document.querySelectorAll('.Choose');
+
+                  // Iterate through each element and remove specified classes
+                  chooseElements.forEach(function (element) {
+                     element.classList.remove('reveal-left', 'reveal-top', 'reveal-right', 'reveal-bottom');
+                  });
+                  var subServicesElements = document.querySelectorAll('.Sub-services-grid');
+
+
+               subServicesElements.forEach(function (element) {
+                 element.classList.remove('reveal-left', 'reveal-top', 'reveal-right', 'reveal-bottom');
+                  });
+               }
+            
+
+            // Call the function when the page loads
+   
+   </script>
+</body>
+</html>

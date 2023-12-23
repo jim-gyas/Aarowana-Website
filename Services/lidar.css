@@ -1,0 +1,135 @@
+
+ /*-----------------common-hero-*/
+ .oil-hero{
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 70.67%), url(../Services/services-images/Rectangle\ 4\ \(39\).png), lightgray 0px -150.056px / 100% 218.296% no-repeat;
+  
+    margin-top: 70px;
+    background-size: cover;
+    width: 100vw;
+    object-fit: cover;
+    background-position: center;
+    height: 500px; 
+    color: #fff; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    
+ }
+
+ /*-----------------------------------oilsection-----*/
+ .lidar-flex{
+   padding: 36px 45px 40px 72px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.lidar-item1{
+   color: #313540;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 60px */
+margin-bottom: 32px;
+}
+
+.lidar-item2{
+   color: #000;
+text-align: left;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+margin-bottom: 20px;
+}
+.lidar-item2 p{
+   margin-bottom: 10px;
+}
+
+
+
+.lidar-spacing{
+   padding-left: 20px;
+   margin-top: 20px;
+}
+
+/*---------------mobile ------*/
+@media screen and (max-width: 600px){
+
+   
+ /*-----------------common-hero-*/
+ .oil-hero{
+
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 70.67%), url(../Services/services-images/Rectangle\ 4\ \(39\).png), lightgray 0px -150.056px / 100% 218.296% no-repeat;
+ 
+   margin-top: 0px;
+   background-size: cover;
+   width: 100vw;
+   object-fit: cover;
+   background-position: center;
+   height: 350px; 
+   color: #fff; 
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+
+   
+}
+ /*-----------------------------------oilsection-----*/
+ .lidar-flex{
+   padding: 36px 10px 40px 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.lidar-item1{
+   color: #313540;
+width: 360px;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 60px */
+margin-bottom: 32px;
+margin-left: 100px;
+}
+h1{
+   font-size: 18px;
+}
+.lidar-item2{
+   color: #000;
+text-align: left;
+
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 24px */
+margin-bottom: 20px;
+}
+.lidar-item2 p{
+   margin-bottom: 10px;
+}
+
+p{
+   font-size: 12px;
+}
+
+
+
+.lidar-spacing{
+   padding-left: 20px;
+   margin-top: 20px;
+   font-size: 12px;
+}
+
+}
